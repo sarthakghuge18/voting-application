@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System - Vote</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Voting System - Vote</h1>
+        <form id="idForm">
+            <label for="voterId">Enter Voter ID:</label>
+            <input type="text" id="voterId" required><br><br>
+            <button type="button" onclick="proceedToVoting()">Next</button>
+        </form>
+        
+        <form id="voteForm" style="display:none;">
+            <div id="candidatesOptions"></div>
+            <button type="button" onclick="submitVote()">Submit Vote</button>
+        </form>
+        
+        <div id="timer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
